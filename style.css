@@ -271,12 +271,25 @@ hr{
     bottom: -8px;
     transition: 0.5s;
 }
-.tab-links .active-links::after{
+.tab-links.active-link::after{
     width: 50%;
 
 }
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.tab-contents ul li span{
+    color:yellow;
+    font-size: 14px;
+}
 
-
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
 
 
 
