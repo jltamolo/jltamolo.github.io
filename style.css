@@ -222,8 +222,9 @@ hr{
 
 /*ABOUT section*/
 #about{
-    margin:auto;
+    margin: auto;
     padding: 80px 0;  
+    height: 120vh;
     
 
 }
@@ -295,7 +296,12 @@ hr{
 /*---------SERVICES------*/
 #services{
     padding: 30px 0;
-    margin: 50px;
+    margin: auto;
+    height: 120vh;
+
+}
+#services .heading{
+    padding-top: 50px;
 }
 .services-list{
     display: grid;
@@ -331,7 +337,12 @@ hr{
 }
 /*-----PROJECTS--*/
 #projects{
+    margin:auto;
     padding: 50px 0;
+   
+}
+#projects .heading{
+    padding-top:50px;
 }
 .work-list{
     display: grid;
@@ -408,7 +419,11 @@ b.btn_seemore:hover{
 }
 
 
-
+/*-----CONTACTS-----*/
+#contacts{
+    margin:auto;
+    height:120vh;
+}
 
 
 
