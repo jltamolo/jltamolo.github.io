@@ -265,7 +265,7 @@ hr{
     content: '';
     width:0;
     height: 3px;
-    background: yellow;
+    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
     position: absolute;
     left:0;
     bottom: -8px;
@@ -280,7 +280,7 @@ hr{
     margin:10px 0;
 }
 .tab-contents ul li span{
-    color:yellow;
+    color:#d56304;
     font-size: 14px;
 }
 
