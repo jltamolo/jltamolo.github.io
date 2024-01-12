@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -10,8 +9,10 @@
     text-transform: uppercase;
 }
 body{
+    margin: 50px;
     background-color: #0c1022;
     color:#fff;
+    box-sizing: border-box;
 }
 
 .heading{
@@ -424,8 +425,93 @@ b.btn_seemore:hover{
     margin:auto;
     height:120vh;
 }
+#contacts .heading{
+    padding-top:50px;
+}
+.contact-left{
+    flex-basis: 35%;
+   
 
 
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+  
+}
+.contact-left p i{
+   color: #d56304;
+   margin-right: 15px;
+   font-size: 15px;
+
+
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    color: #ababab;
+    display: inline-block;
+
+
+}
+.social-icons a:hover{
+    color:yellow;
+    transform: translateY(-5px);
+
+}
+.btn_cv{
+    color: #fff;
+    border-radius:10px;
+    text-decoration: none;
+    background:#d56304;
+    padding: 5px;
+    margin-top: 30px;
+    display: inline;
+}
+.contact-right form{
+    width: 80%;
+
+}
+form input,form textarea{
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: #0c1022;
+    padding: 15px;
+    margin:15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 6px;
+
+}
+.btn_form{
+    width: 100px;
+    color: #fff;
+    border-radius:10px;
+    text-decoration: none;
+    background:#d56304;
+    padding: 5px;
+    margin-top: 30px;
+    display: inline;
+    align-items: center;
+}
+.copyright{
+    margin:0;
+    width: 100%;
+    text-align: center;
+    margin-top:20px;
+
+
+}
 
 
 
