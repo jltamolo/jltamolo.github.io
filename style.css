@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
-    
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 .navbar{
     text-transform: uppercase;
 }
+section{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 body{
     background-color: #0c1022;
     color:#fff;
-    box-sizing: border-box;
+    margin-left: 30px;
+    margin-right: 30px;
+
+
 }
 
 .heading{
@@ -78,6 +86,7 @@ hr{
 }
 .home-content h3{
     font-size:35px;
+    color:#ababab;
     font-weight:500;
     
 }
@@ -278,14 +287,16 @@ hr{
 
 }
 .tab-contents ul li{
-    list-style: none;
     margin:10px 0;
 }
 .tab-contents ul li span{
     color:#d56304;
-    font-size: 14px;
+    font-size: 16px;
 }
+.ul-skills{
+    list-style: disc;
 
+}
 .tab-contents{
     display:none;
 }
@@ -511,7 +522,42 @@ form input,form textarea{
 
 
 }
+/* ----SCROLL TO TOP---*/
 
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #f8be01; /* Change to your desired button color */
+    color: #ffffff; /* Change to your desired text color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #ecb80d; /* Change to your desired hover color */
+}
+
+/* Apply styles when the target element with the id "top" is active (clicked) */
+#top:target #scrollToTopBtn {
+    display: none;
+}
+/* CSS FOR SMALL SCREENS */
+@media only screen and (max-width: 600px){
+
+    .logo{
+        display: none;
+    }
+
+
+
+
+
+}
 
 
 
