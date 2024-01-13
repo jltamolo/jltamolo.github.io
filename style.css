@@ -19,6 +19,7 @@ section{
 
     
 }
+@media only screen and (min-width: 769px){
 body{
     background-color: #0c1022;
     color:#fff;
@@ -28,6 +29,7 @@ body{
     overflow-y: scroll;
 
 
+}
 }
 
 .heading{
@@ -54,20 +56,17 @@ hr{
     background: #0c1022;
 
 }
-.logo{
-    font-size: 25px;
-    color: #ffff;
-    text-decoration: none;
-    font-weight: 600;
+.logo img {
+    max-width: 40px; /* Adjust the maximum width of the logo as needed */
     
-
-}
+  }
 .navbar a{
     font-size: 18px;
     color: #fff;
     text-decoration: none;
     font-weight:500;
     margin-left: 35px;
+    
 }
 
 .navbar a.active, a:hover{
@@ -85,7 +84,7 @@ hr{
     justify-content: space-around;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 1.2s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
     animation-fill-mode: forwards;
 }
 @keyframes fadeInUp {
@@ -107,7 +106,7 @@ hr{
 
 }
 .home-content h3{
-    font-size:35px;
+    font-size:25px;
     color:#ababab;
     font-weight:500;
     
@@ -116,6 +115,7 @@ hr{
     font-size:16px;
     font-weight:80;
     margin:20px 0 4;
+    
 }
 .btn{
     position: relative;
@@ -225,30 +225,6 @@ hr{
 
 }
 
-.home-img{
-    width: 300px;
-    height: 300px;
-    
-}
-.home-img .glowing-circle{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.home-img .glowing-circle::after{
-    content: '';
-    position:absolute;
-    width: 380px;
-    height: 380px;
-    background: #0c1022;
-    border-radius: 50%;
-
-}
 
 
 /*ABOUT section*/
@@ -411,7 +387,7 @@ hr{
 .layer{
     width: 100%;
     height:0;
-    background: linear-gradient(rgba(0,0,0,0.1),#d56304);
+    background: linear-gradient(rgba(0,0,0,0.3),#140646);
     border-radius: 10px;
     position:absolute;
     left: 0;
@@ -424,11 +400,12 @@ hr{
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    font-weight: 500;
     transition: height 0.5s;
 }
 
 .layer h3{
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 .layer a{
@@ -570,35 +547,166 @@ form input,form textarea{
 
 
 }
-/* ----SCROLL TO TOP---*/
 
-
-
-/* Apply styles when the target element with the id "top" is active (clicked) */
-#top:target #scrollToTopBtn {
-    display: none;
-}
 /* CSS FOR SMALL SCREENS */
 @media only screen and (max-width: 600px){
+    section{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+        
+    }
 
     .logo{
         display: none;
     }
+    body{
+        background-color: #0c1022;
+        color:#fff;
+        margin-left: 10px;
+        margin-right: 10px;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+    .navbar a{
+        font-size: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight:600;
+        margin-left: 20px;
+        
+    }
+    .home{
+        width:100%;
+        margin-left: 14px;
+        height:120vh;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        justify-content: space-around;
+}
+.home-content h1{
+    font-size:28px;
+    font-weight:700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+}
+.home-content h3{
+    font-size:16px;
+    color:#ababab;
+    font-weight:500;
+    margin-bottom: 10px;
+    
+}
+.home-content p{
+    font-size:14px;
+    font-weight:80;
+    margin:20px 0 4;
+    
+}
+.btn{
+    margin-left: 10px;
+    margin-top: 40px;
+    width:120px;
+    height: 30px;
+    font-weight: 600px;
+    font-size: 12px;
+
+}
+.home-socials a{
+    position: relative;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 20px;
+     height: 20px;
+     background:transparent;
+     border-radius: 50%;
+     font-size: 12px;
+     color: #fff;
+     text-decoration: none;
+     margin-right: 10px;
+     text-decoration: none;
+
+}
+
+/*ABOUT section*/
+#about{
+    margin: 5px;
+    padding: 5px;  
+}
 
 
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:15px;
+}
+#about .heading{
+    margin-top: 25px;
+}
+.col-lg-4 img{
+   display: none;
+}
+#about p{
+    font-size: 15px;
+}
+.col-lg-8{
+    flex-basis: 100%;
+    margin: auto;
+    justify-content: space-around;
+    
+}
+/*---------SERVICES------*/
+#services{
+    padding: 5px;
+    margin: 5px;
 
+}
+#services .heading{
+    padding-top: 25px;
+}
+.services-list div i{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.services-list div h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
 
+#projects{
+    padding: 5px;
+    margin: 5px;
 
+}
+#projects .heading{
+    padding-top:50px;
+}
+
+/*-----CONTACTS-----*/
+#contacts{
+    padding: 5px;
+    margin: 5px;
+
+}
+#contacts .heading{
+    
+    padding-top:50px;
+    
+}
+.contact-map{
+    width:400px;
+    height:400px;
 }
 
 
 
 
 
-
-
-
-
-
-
-
+}
