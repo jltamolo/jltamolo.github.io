@@ -238,13 +238,15 @@
                         <!--<a href="assets/Juliet Onyango_cv.pdf" download class="btn">Download CV</a> -->
                     </div>
                     <div class="contact-right">
-                        <form action="https://script.google.com/macros/s/AKfycbwk4_eBv49KgOTrfdfK0zpcKAos3QrZreuUhYXQ6NYfaU_AHrkXBQMeRl3okJbaxaof/exec" method="post">
+                        <form id="portform" name="submit-to-google-sheet">
                             <h2 class="h2-form">Let's work together</h2>
                             <input type="text" name="Name" placeholder="Your Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn">Submit</button>
                         </form>
+                        <span id="msg"></span>
+        
                     </div>
                 </div>
             </div>
@@ -277,6 +279,41 @@
     
     
     </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzq97bwRhQ-jYnq3O__ozXM-2DDlG2hJeeFYzqI_71nzh_uE03ej8iHcMVnD_HaBicQrw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully! I shall be in touch."
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+   <!-- <script>
+        function submitForm() {
+          var form = document.getElementById('portform');
+          var successMessage = document.getElementById('successMessage');
+        
+
+          successMessage.style.display = 'block';
+ 
+          setTimeout(function() {
+            form.reset();
+            successMessage.style.display = 'none';
+          }, 2000);  // 2000 milliseconds (2 seconds)
+        }
+        </script> -->
+    
    
     
 </body>
