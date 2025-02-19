@@ -616,9 +616,9 @@ form input,form textarea{
     margin-left: 10px;
     margin-top: 40px;
     width:120px;
-    height: 30px;
+    height: 40px;
     font-weight: 600px;
-    font-size: 12px;
+    font-size: 13px;
 
 }
 .home-socials a{
@@ -656,11 +656,18 @@ form input,form textarea{
 }
 .col-lg-4 img{
    display: none;
+   
 }
 #about p{
     font-size: 15px;
 }
 .col-lg-8{
+    flex-basis: 100%;
+    margin: auto;
+    justify-content: space-around;
+    
+}
+.col-lg-4{
     flex-basis: 100%;
     margin: auto;
     justify-content: space-around;
@@ -690,7 +697,7 @@ form input,form textarea{
     color: #fff;
 }
 .services-list div h2{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
 }
