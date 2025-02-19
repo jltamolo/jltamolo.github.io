@@ -21,7 +21,7 @@ section{
 }
 @media only screen and (min-width: 769px){
 body{
-    background-color: #0c1022;
+    background-color: #060a1c;
     color:#fff;
     margin-left: 30px;
     margin-right: 30px;
@@ -34,7 +34,7 @@ body{
 
 .heading{
    text-align: center;
-   text-transform: uppercase;
+   text-transform: capitalize;
 }
 hr{
     width: 100px;
@@ -53,7 +53,7 @@ hr{
     display: flex;
     align-items: center;
     z-index: 100;
-    background: #0c1022;
+    background: #060a1c;
 
 }
 .logo img {
@@ -70,7 +70,7 @@ hr{
 }
 
 .navbar a.active, a:hover{
-    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+   background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     
@@ -100,8 +100,8 @@ hr{
 
 
 .home-content h1{
-    font-size:56px;
-    font-weight:700;
+    font-size:45px;
+    font-weight:600;
     line-height: 1.2;
 
 }
@@ -127,16 +127,16 @@ hr{
     width:180px;
     height: 48px;
     background:transparent;
-    border-radius: 10px;
     font-size: 19px;
     color: #fff;
     text-decoration: none;
     font-weight: 600px;
     letter-spacing: 1px;
     z-index: 1;
-    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+   background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
 
 }
+
 /*
 .btn::before{
     content:'';
@@ -145,7 +145,7 @@ hr{
     left: 0;
     inset: 0;
     background-position: 0 0 ;
-    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+   background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
     z-index: -1;
     border-radius: 40px;
     background-size: 200%;
@@ -165,7 +165,7 @@ hr{
     left: 0;
     inset: 0;
     background-position: 0 0 ;
-    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+   background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
     z-index: -1;
     border-radius: 40px;
     background-size: 200%;
@@ -181,7 +181,7 @@ hr{
         
 .home-socials a{
     position: relative;
-   display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
@@ -200,7 +200,7 @@ hr{
     position: absolute;
      width: 100%;
      height: 100%;
-     background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+    background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
      border-radius: 50%;
     z-index: -1;
      transition: .5s ease;
@@ -214,7 +214,7 @@ hr{
     position: absolute;
      width: 100%;
      height: 100%;
-     background:#0c1022;
+     background:#060a1c;
      border-radius: 50%;
      transform:scale(.88);
      z-index: -1;
@@ -259,9 +259,10 @@ hr{
     flex-basis: 35%;
     
 }
-.col-lg-4 img{
+.about-svg{
     width:100%;
     border-radius:15px; 
+    justify-content: space-around;
 }
 .col-lg-8{
     flex-basis: 60%;
@@ -270,10 +271,7 @@ hr{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
-
-    
-
+    margin-bottom: 30px;
 }
 
 .tab-links{
@@ -288,7 +286,7 @@ hr{
     content: '';
     width:0;
     height: 3px;
-    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+   background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
     position: absolute;
     left:0;
     bottom: -8px;
@@ -302,7 +300,7 @@ hr{
     margin:10px 0;
 }
 .tab-contents ul li span{
-    color:#d56304;
+    color:#832f68;
     font-size: 16px;
 }
 .ul-skills{
@@ -328,32 +326,31 @@ hr{
 }
 .services-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 
 }
 
 .services-list div{
-    background: #d56304;
+    background: #832f68;
     padding: 20px;
     font-size: 13px;
     font-weight: 100;
-    border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 .services-list div i{
     font-size: 40px;
     margin-bottom: 30px;
-    color: #fff;
+    color: #fff;   
 }
 .services-list div h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 .services-list div:hover{
-    background:linear-gradient(45deg, rgb(199, 202, 5), rgb(226, 4, 4));
+   background: linear-gradient(90deg, rgba(255,0,155,1) 26%, rgba(131,47,104,1) 61%);
     transform: translate(-10px);
 
 
@@ -374,21 +371,18 @@ hr{
     margin-top: 50px;
 }
 .work{
-    border-radius:10px;
     position: relative;
     overflow: hidden;
 }
 .work img{
     width: 100%;
-    border-radius:10px;
     display: block;
     transition: transform 0.5s;
 }
 .layer{
     width: 100%;
     height:0;
-    background: linear-gradient(rgba(0,0,0,0.3),#140646);
-    border-radius: 10px;
+    background: linear-gradient(rgba(0,0,0,0.3),#080130);
     position:absolute;
     left: 0;
     bottom: 0;
@@ -409,16 +403,14 @@ hr{
     margin-bottom: 20px;
 }
 .layer a{
-    display: none;
     margin-top:20px;
-    color: #d56304;
+    color: #080130;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
     background:#fff;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
     text-align: center;
 }
 .work:hover img{
@@ -428,20 +420,22 @@ hr{
 .work:hover .layer{
     height:100%;
 }
+.work:hover a{
+    color: #832f68;
+}
 .btn_seemore{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #d56304;
+    border: 1px solid #832f68;
     padding: 14px 50px;
-    border-radius: 6px;
     text-decoration: none;
     color: #fff;
     transition: background-color 0.5s;
 }
 
 b.btn_seemore:hover{
-    background: #d56304;
+    background: #832f68;
 }
 
 
@@ -474,7 +468,7 @@ b.btn_seemore:hover{
   
 }
 .contact-left p i{
-   color: #d56304;
+   color: #832f68;
    margin-right: 15px;
    font-size: 20px;
 
@@ -502,7 +496,7 @@ b.btn_seemore:hover{
     color: #fff;
     border-radius:10px;
     text-decoration: none;
-    background:#d56304;
+    background:#832f68;
     padding: 5px;
     margin-top: 30px;
     display: inline;
@@ -522,7 +516,7 @@ form input,form textarea{
     border:none;
     border-bottom: 1px solid #fff;
     outline: none;
-    background: #0c1022;
+    background: #060a1c;
     padding: 15px;
     margin:15px;
     color: #fff;
@@ -535,7 +529,7 @@ form input,form textarea{
     color: #fff;
     border-radius:10px;
     text-decoration: none;
-    background:#d56304;
+    background:#832f68;
     padding: 5px;
     margin-top: 30px;
     display: inline;
@@ -575,7 +569,7 @@ form input,form textarea{
         display: none;
     }
     body{
-        background-color: #0c1022;
+        background-color: #060a1c;
         color:#fff;
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -766,7 +760,7 @@ form input,form textarea{
         display: none;
     }
     body{
-        background-color: #0c1022;
+        background-color: #060a1c;
         color:#fff;
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
@@ -873,12 +867,14 @@ form input,form textarea{
 #services .heading{
     padding-top: 50px;
 }
+
 .services-list div i{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 30px;
     color: #fff;
 }
+
 .services-list div h2{
     font-size: 25px;
     font-weight: 500;
