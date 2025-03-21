@@ -174,15 +174,27 @@
                              <p>A lawfirm website where prospective clients can get more inforamtion about the lawfirm. </p>
                             
                         </div>
-                    </div> 
+                    </div>
+
+
+
+                 
                     <div class="work">
-                        <img src="/images/beau.png">
-                        <div class="layer">
-                             <h3>Beauty Shop</h3>
-                             <p>An ecommerce website where customers can order beauty products and have them delivered to their doorstep</p>
-                        
-                        </div>
-                    </div> 
+                        <img src="/images/beau.png" class="thumbnail" onclick="showImage('/images/lawfirmlong.png')" alt="Beauty Shop">
+                       <!-- <div class="layer">
+                            <h3>Beauty Shop</h3>
+                            <p>An ecommerce website where customers can order beauty products and have them delivered to their doorstep</p>
+                        </div>-->
+                    </div>
+                    
+                    <!-- Lightbox -->
+                    <div id="lightbox" class="lightbox" onclick="closeImage()">
+                        <img id="lightbox-img" src="" alt="Large Image">
+                    </div>
+
+
+
+
                 </div>
 
 
@@ -288,8 +300,17 @@
         </div>
 
     </section>
-
-
+    <script>
+         function showImage(src) {
+        document.getElementById("lightbox-img").src = src;
+        document.getElementById("lightbox").style.display = "flex";
+    }
+    
+    function closeImage() {
+        document.getElementById("lightbox").style.display = "none";
+    }
+    </script>
+   
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
