@@ -1,359 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="gQyMnRKiUi8o1WH-yfbwqf65BEwvZapnJwgeBRkZ2R8" />
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="google-site-verification" content="gQyMnRKiUi8o1WH-yfbwqf65BEwvZapnJwgeBRkZ2R8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Software developer with expertise in Software development.">
-	<meta property="og:title" content="Juliet Onyango | Portfolio">
-	<meta property="og:description" content="IT professional with expertise in crafting innovative solutions. Specialized in Laravel systems. Committed to delivering high-quality software products that drive efficiency and exceed client expectations. Let's connect and explore how my technical skills can contribute to your projects.">
-	<meta property="og:image" content="https://julietonyango.netlify.app/images/julietlandingnew.PNG">
+    <meta name="description" content="Web applictaion expert.">
+    <meta property="og:title" content="Juliet Onyango | Portfolio">
+	<meta property="og:description" content="IT certified professional with expertise in crafting innovative solutions. Committed to delivering high-quality web applications that drive efficiency and exceed client expectations.">
+	<meta property="og:image" content="https://jltamolo.github.io/images/landing_blue.png">
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta property="og:image:alt" content="Juliet Onyango Portfolio Landing page" />
-	<meta property="og:url" content="https://julietonyango.netlify.app">
-	<meta http-equiv="Content-Language" content="en-us">
-    <title>Juliet Onyango | Portfolio</title>
+    <meta property="og:url" content="https://jltamolo.github.io">
+    <title>Juliet Onyango| Web Apps Expert</title>
     <link rel="icon" href="images/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet"> <link rel="stylesheet" href="bootstrap-5.1.3-dist/">
     <script src="https://kit.fontawesome.com/95f5d4e749.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <a href="#home"> <img src="/images/logo_white.png" alt="logo"></a>
-         </div>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
-        </nav>
-    </header>
-    <section class="home" id="home">
-        <div class="home-socials">
-            <a href="mailto:julietonygo@gmail.com"><i class='bx bxl-gmail'></i></a>
-            <a href="https://github.com/jltamolo"><i class='bx bxl-github'></i></a>
-            <a href="https://wa.me/254729057520" target="_blank"><i class='bx bxl-whatsapp'></i></a>  
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+              <a href="#home"> <img src="/images/logo_white.png" alt="logo"></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
-        <div class="home-content">
-            <h1>Hi, I'm Juliet Onyango</h1>
-            <h3>IT Professional <span style="color:#fff";>| </span>Web Apps Expert</h3>
-            <p>
-                From design to development, I help businesses establish and grow their online presence. Whether you're launching a new project or enhancing an existing one, I provide tailored digital solutions to meet your needs. With a strong technical foundation, I ensure seamless execution across various industries. Let’s collaborate to bring your vision to life, reach out today!
-            </p>
-            <a href="#contacts" class="btn">Contact me</a>
-            <a href="#projects" class="btn">View Projects</a>
-        </div>
-        
-    </section>
-    <!---ABOUT SECTION-->
-    <section id="about" class="sections">
-        <h2 class="heading">About me</h2>
-        <hr>
+    </nav>
+
+     <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <p>I am Juliet Onyango, an IT specialist with experience in software development and consultancy. Holding a Bachelor's degree in Information Technology, I am passionate about leveraging technology to create innovative solutions that drive business efficiency.</p><br>
-                     <p>My growing interest in the digital space led me to transition into this dynamic field, where I have successfully managed web projects and streamlined digital transformation for businesses. With expertise in software development and IT consulting, I excel at optimizing processes and solving complex challenges.</p><br>
-                     <p>While Nairobi is my base, I am open to remote opportunities and enjoy collaborating with diverse teams globally to deliver impactful digital solutions.</p> <br><br>
-                 </div>
+            <div class="hero-content">
+                
+                <h1 class="hero-title">
+                    Crafting Digital</br>
+                    <span class="gradient-text">Solutions</span>
+                </h1>
+                <div class="animated-info">
+                    <span class="animated-item">Custom web applications</span>
+                    <span class="animated-item">E-commerce</span>
+                    <span class="animated-item">Stunning web design</span>
+                </div>
+                <p class="hero-description">
+                I transform ideas into powerful web applications using cutting-edge technologies. From concept to deployment, I deliver exceptional digital experiences.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        View projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+     <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services That  <span class="gradient-text">Scale</span></h2>
+                <p>Your vision, my expertise! From concept to deployment, I provide comprehensive web application services that help businesses thrive in the digital landscape.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Web Development</h3>
+                    <p>Have an idea or a business process you'd like developed? I build custom web solutions made to fit functionality.Let's bring your vision to life.</p>
+                    <ul>
+                        <li>Custom web applications built to your specifications</li>
+                        <li>Booking and appointment management</li>
+                        <li>Inventory and staff management</li>
+                        <li>Integrations with third party tools</li>
+                        
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>E-commerce Solutions</h3>
+                    <p>Start selling online with an online store that's easy for your customers to use and simple for you to manage. I build online stores that look great and drive results.</p>
+                    <ul>
+                        <li>Online store setup: Woocommerce, Shopify</li>
+                        <li>Dashboard to organize your orders and products</li>
+                        <li> M-Pesa, Mastercard, Stripe etc intergrations</li>
+                        <li>E-commerce training for you and your staff</li>
+                    </ul>
+                </div>
                
-                <div class="col-lg-4">
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')" > Technical Skills</p>
-                        <p class="tab-links" onclick="opentab('education')" >Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul class="ul-skills">
-                            <li><span>Programming: </span> PHP, Laravel, Javascript</li>
-                            <li><span>Project Management: </span> Agile, Scrum, PRINCE2</li>
-                            <li><span>Version Control: </span> Git, GitHub</li>
-                            <li><span>Design & CMS: </span> WordPress, Figma, Canva</li>
-                            <li><span>Digital Marketing: </span> SEO, Google Ads, Social Media Marketing</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Bachelor of Science in Information Technology</span><br>Jomo Kenyatta University of Agriculture and Technology</li>
-                            <li><span>Huawei ICT Associate - Datacom</span><br>Huawei Academy</li>
-                            <li><span>Foundations of Project Management</span><br>Coursera</li>
-                            <li><span>Managing successful projects with PRINCE2</span><br>Learnovate Technologies</li>
-                            <li><span>DevCtrainingwith Andela</span><br>Andela, Google, OpenClassrooms</li>
-                        </ul>
-                    </div>  
+                <div class="service-card">
+                    
+                    <h3>Web Design</h3>
+                    <p>I design beautiful and professional websites that help your business stand out online. Your site will look great on phones and computers, load fast and clearly show what you offer.</p>
+                    <ul>
+                        <li>Perfectly designed website</li>
+                        <li>Pages for services, contact, info and more</li>
+                        <li>Desktop and mobile friendly design</li>
+                        <li>High rankings on search engines</li>
+                    </ul>
                 </div>
-
-                
-                
                 
             </div>
         </div>
     </section>
 
-    <!--SERVICES-->
-    <section id="services" class="sections">
-        <div class="">
-            <h2 class="heading">What I do</h2>
-            <hr>
-            <div class="container">
-                <div class="services-list">
-                    <div>
-                        <i class="bi bi-braces"></i>
-                        <h2>Custom Web Application Development</h2>
-                        <p>
-                            I create scalable, secure and user-friendly web applications tailored to your unique business needs. From simple to complex applications, I’ll help streamline operations and deliver measurable results. </p>
-                    </div>
-                    <div>
-                       
-                        <i class='bx bx-cart-add'></i>
-                        <h2>Point of Sale (POS) Systems</h2>
-                        <p class="m-0">I develop efficient POS systems for seamless transactions, inventory management and real-time analytics. Whether it’s for retail or restaurants, I’ll help you simplify and optimize your operations.</p>
-                    </div>
-                    <div>
-                        <i class="bi bi-code-slash"></i>
-                        <h2>Web Design and Branding</h2>
-                         <p>
-                            I craft modern, responsive websites that captivate visitors and drive conversions. Your online presence will reflect your brand’s best attributes, leaving a lasting impression.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="services-list">
-                    <div>
-                        <i class="bi bi-calendar4-week"></i>
-                        <h2>IT Consulting and Strategy</h2>
-                        <p>
-                            I provide expert IT consulting to simplify your technology decisions. From system optimization to cloud migration, I’ll guide you toward innovative and growth-focused solutions.
-                        </p>
-                    </div>
-                    <div>
-                        <i class="bi bi-binoculars"></i>
-                        <h2>Support and Maintenance</h2>
-                       <p>
-                        I ensure your systems run smoothly with reliable support and maintenance. From updates to troubleshooting, I’ll handle the tech so you can focus on your business.
-                       </p>
-                    </div>
-                    <div>
-                        <i class="bi bi-brightness-high"></i>
-                        <h2>Automation and Workflow Optimization</h2>
-                         <p>
-                            I help businesses save time and reduce costs by automating repetitive tasks and optimizing workflows. With tailored solutions, I’ll streamline your processes and improve overall efficiency.
-                         </p>
-                    </div>
-
-                </div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p>Explore my portfolio of web applications and e-commerce solutions built for clients across various industries.</p>
+                
             </div>
-        
-        </div>
-    </section>
-<!--PROJECTS-->
-    <section id="projects" class="sections">
-            <h2 class="heading">Projects</h2>
-            <hr>
-            <div class="container">
-                <div class="work-list">
-                    <div class="work">
+
+            <div class="projects-grid">
+                <div class="project-card" >
+                    <div class="project-image">
                         <img src="/images/wws.png">
-                        <div class="layer">
-                             <h3>Waste Water Solution</h3>
-                             <p>A wastewater treatment website showcasing more inforamtion about the company.</p>
-                             <a href="https://wastesolution.so" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        
+                    </div>
+                    <div class="project-content">
+                         <h3>Waste Water Solution, Somalia  </h3>
+                             <p>A professional website developed for a wastewater management company showcasing services, treatment solutions and products. </p>
+                        
+                        <div class="project-actions">
+                            <a  href="https://wastesolution.so" target="_blank" class="port-link">Link</a>
                         </div>
-                    </div> 
-                    <div class="work">
-                        <img src="/images/nyumbanike.png">
-                        <div class="layer">
-                             <h3>Nyumbani KE</h3>
-                             <p>An ecommerce website for a household products store.</p>
-                             <a href="/images/nyumbanikelong.png" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" >
+                    <div class="project-image">
+                       <img src="/images/nyumbanike.png">
+                        
+                    </div>
+                    <div class="project-content">
+                        <h3>Nyumbani KE</h3>
+                             <p>A modern online store for a household goods business. Includes product categories, filters, payment integrations and clean design.</p>
+                        
+                        <div class="project-actions">
+                            <a href="/images/nyumbanikelong.png" target="_blank" class="port-link">Link</a>
+                            
                         </div>
-                    </div> 
-                    <div class="work">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
                         <img src="/images/musauco.png">
-                        <div class="layer">
-                             <h3>Musau and Co Advocates</h3>
-                             <p>A lawfirm website where prospective clients can get more inforamtion about the lawfirm. </p>
-                             <a href="/images/lawfirmlong.png" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        
+                    </div>
+                    <div class="project-content">
+                        <h3>Musau and Co Advocates</h3>
+                             <p>A clean and professional website built for a law firm featuring stunning landing page, detailed services, faqs. Fully mobile friendly and designed to buid trust. </p>
+                        
+                        <div class="project-actions">
+                           <a href="/images/lawfirmlong.png" target="_blank" class="port-link">Link</a>
+                            
                         </div>
-                    </div> 
+                    </div>
+                </div>
+
+               
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/beau.png">
+                        
+                    </div>
+                    <div class="project-content">
+                        <h3>Beauty Shop</h3>
+                         <p>A visually stunning website created for a cosmetics company showcasing skincare and beauty products and reviews.</p>
+                        <div class="project-actions">
+                            <a href="/images/beaulong.png" target="_blank" class="port-link">Link</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                         <img src="/images/homeshot.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sirius Electronics Online Store</h3>
+                         <p>A fully custom developed e-commerce platform featuring secure shopping cart, product categories, stripe payment, admin dashboard to manage products, orders and customers in real time. </p>
+                        
+                        <div class="project-actions">
+                            <a href="/images/homeshot.png" target="_blank" class="port-link" >Link</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/redcross.png">
+                    </div>
+                    <div class="project-content">
+                        <h3>Relief help Website</h3>
+                                <p>Theme duplication for Red Cross Kenya. As a Red Cross Volunteer this made it easy to manipulate the design of the theme used. </p>
+                        
+                        <div class="project-actions">
+                           <a href="/images/redcrosslong.png" target="_blank" class="port-link">Link</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+
+    
+ <!-- How I Work Section -->
+    <section class="how-i-work-section" id="timeline">
+        <div class="section-header">
+                <h2 class="h2-work">How I <span class="gradient-text">Work</span></h2>
+                <p class="p-work">I employ proven development methodologies to ensure your project is delivered on time, within budget, timeline set and beyond expectations. </p>
+                
+            </div>
+            <div class="stages-container">
+                <!-- Stage 1 -->
+                <div class="stage-wrapper">
+                    <div class="stage-card">
+                        <div class="stage-number">1</div>
+                        <div class="stage-content">
+                            <h3 class="stage-title">Requirements & Analysis</h3>
+                            <p class="stage-description">
+                                I begin by thoroughly understanding your needs, goals and target audience. 
+                                Through detailed discussions and research, I analyze your requirements to 
+                                create a solid foundation for your project.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="connector-line"></div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="stage-wrapper">
+                    <div class="stage-card">
+                        <div class="stage-number">2</div>
+                        <div class="stage-content">
+                            <h3 class="stage-title">Design & Implementation</h3>
+                            <p class="stage-description">
+                                With a clear understanding of your needs, I design and implement robust solutions. Every element is carefully considered to 
+                                ensure optimal user experience and functionality.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="connector-line"></div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="stage-wrapper">
+                    <div class="stage-card">
+                        <div class="stage-number">3</div>
+                        <div class="stage-content">
+                            <h3 class="stage-title">Client Reviews & Testing</h3>
+                            <p class="stage-description">
+                                Your feedback is invaluable. I present the work for your review and 
+                                conduct comprehensive testing to ensure everything meets your expectations 
+                                and works flawlessly across all platforms.
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="connector-line"></div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="stage-wrapper">
+                    <div class="stage-card">
+                        <div class="stage-number">4</div>
+                        <div class="stage-content">
+                            <h3 class="stage-title">Deployment & Maintenance</h3>
+                            <p class="stage-description">
+                                The final stage involves launching your project and providing ongoing 
+                                support. I ensure smooth deployment and offer maintenance services to 
+                                keep your solution running at peak performance.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p>Everything you need to know about working with me and my development process.</p>
+            </div>
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does a typical project take?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Project timelines vary depending on complexity. A simple website typically takes 1-3 weeks, custom web applications take 6-12 weeks and complex e-commerce solutions can take 12-16 weeks. I provide detailed timelines during project planning.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide ongoing support and maintenance?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! All my projects include ongoing support ranging from 3-12 months depending on the price  package. This includes bug fixes, security updates, performance optimization and technical support.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you work with existing systems?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. I can audit, redesign and enhance existing platforms for better performance, scalability and design.</p>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div class="text-center faq-text">
+                <p>Still have questions? I'm here to help!</p>
+                <a href="https://wa.me/254729057520" target="_blank"><button class="btn btn-primary">Contact Me Directly</button></a>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Work <span class="gradient-text">Together</span></h2>
+                <p>Ready to bring your project to life? Get in touch and let's discuss how I can help you achieve your business goals.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon"><a href="mailto:julietonygo@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            julietonygo@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><a href="https://wa.me/254729057520" target="_blank"><i class='bx bxl-whatsapp'></i></div>
+                        <div>
+                            <h4>Phone | Whatsapp</h4>
+                             +254 729057520</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><a href=""><i class="fa-solid fa-map-pin"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Remote, Kenya</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="port-form"name="submit-to-google-sheet">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    </br></br>
+                    <span id="msg"></span>
+                    </form>
+                
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Juliet Onyango</h4>
+                    <p>Seasoned web applications expert specialiizing in management systems, e-commerce and payment integration. I craft seamless digital experiences that fuel business growth and user satisfaction.</p>
                     
                 </div>
-
-
-                <div class="work-list">
-                    <div class="work">
-                        <img src="/images/redcross.png">
-                            <div class="layer">
-                                <h3>Relief help Website</h3>
-                                <p>Project duplication done for redcross Kenya as their volunteer. </p>
-                                <a href="/images/redcrosslong.png" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                   </div> 
-                    <div class="work">
-                    <img src="/images/homeshot.png">
-                    <div class="layer">
-                         <h3>Sirius Electronics Online Store</h3>
-                         <p>An online electronics store where clients can shop online and have goods delivered at their doorstep. Features online payment or cash on delivery. </p>
-                         <a href="/images/homeshot.png" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                    </div> 
-                    <div class="work">
-                    <img src="/images/beau.png">
-                    <div class="layer">
-                         <h3>Beauty Shop</h3>
-                         <p>An ecommerce website where customers can order beauty products and have them delivered to their doorstep</p>
-                         <a href="/images/beaulong.png" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>  
-               
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Custom Web Development</a></li>
+                        <li><a href="#services">E-commerce Solutions</a></li>
+                        <li><a href="#services">Web design</a></li>
+                        <li><a href="#services">Management systems</a></li>
+                    </ul>
                 </div>
                 
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">Frequently asked questions</a></li>
+                    </ul>
+                </div>
                 
-                <div class="work-list">
-
-                    <div class="work">
-                        <img src="/images/feedback.png">
-                            <div class="layer">
-                                <h3>Feedback System</h3>
-                                <p>The system allows users to give ratings and comments on services offered by the instituition through scanning a qrcode.</p>
-                              
-                            </div>
-                    </div> 
-
-                    <div class="work">
-                        <img src="/images/cert.png">
-                            <div class="layer">
-                                <h3>Certificate Verification System</h3>
-                                <p>It authenticates the legitimacy of certificates through database cross-referencing, provides instant verification results while maintaining a secure record of verified documents.</p>
-                                
-                            </div>
-                    </div> 
-
-                    <div class="work">
-                        <img src="/images/elevate.png">
-                            <div class="layer">
-                                <h3>Church Website</h3>
-                                <p>Provides a central hub for congregation to access information about services, events and ministries.</p>
-                                <a href="/images/elevate.png" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                    </div> 
-                 </div>
-                
-            </div>
-       
-    </section>
-<!-----CONTACTS-->
-    <section id="contacts" class="sections">
-            <h2 class="heading">Contacts</h2>
-            <hr>
-            <div class="container">
-                <div class="row" class="contacts-row">
-                    <div class="contact-left">
-                        <div class="google-map w-100">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8160025351613!2d36.818476273727605!3d-1.284318935621375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d69428395d%3A0x5feca0500bd24aeb!2sJKUAT%20Towers!5e0!3m2!1sen!2ske!4v1705044992021!5m2!1sen!2ske" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="contact-map"></iframe>
-                          </div>
-                        <div class="social-icons">
-                            <a href="mailto:julietonygo@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
-                            <a href="https://github.com/jltamolo" target="_blank"><i class='bx bxl-github'></i></a>
-                            <a href="https://wa.me/254729057520" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form id="portform" name="submit-to-google-sheet">
-                            <h2 class="h2-form">Let's work together</h2>
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-        
-                    </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Phone:  (254) 729057520</li>
+                        <li>Location:   Remote, Nairobi, Kenya</li>
+                        <li>Email:  julietonygo@gmail.com</li>
+                    </ul>
                 </div>
             </div>
             
+            <div class="footer-bottom">
+                <p>&copy; 2025 Juliet Onyango. Available for new projects and opportunities.</p>
+            </div>
         </div>
-    </section>
-    
-    <section class="footer">
-        <div class="copyright">
-            <p>Copyright © Juliet Onyango</p>
-        </div>
-
-    </section>
+    </footer>
 
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    
-    
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzq97bwRhQ-jYnq3O__ozXM-2DDlG2hJeeFYzqI_71nzh_uE03ej8iHcMVnD_HaBicQrw/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById('msg')
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML= "Message sent successfully! I shall be in touch."
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-      <script>
-        function openModal(imageSrc) {
-    document.getElementById("fullImage").src = imageSrc;
-    document.getElementById("imageModal").style.display = "flex";
-}
 
-function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
-}
-      </script>
-    
-   <!-- <script>
-        function submitForm() {
-          var form = document.getElementById('portform');
-          var successMessage = document.getElementById('successMessage');
-        
 
-          successMessage.style.display = 'block';
- 
-          setTimeout(function() {
-            form.reset();
-            successMessage.style.display = 'none';
-          }, 2000);  // 2000 milliseconds (2 seconds)
-        }
-        </script> -->
-    
-   
-    
+
+
+
+
+
+
+
+<button id="scrollToTopBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+ <script src="script.js"></script>
 </body>
-</html>
